@@ -6,22 +6,20 @@ imageButton.addEventListener("click", () =>{
   iframe.setAttribute("src", imageText.value);
   images.appendChild(iframe);
 });
-
 let links=document.getElementById("links");
 let linkButton=document.getElementById("link_button");
 let linkText=document.getElementById("link_text");
 linkButton.addEventListener("click", () =>{
   let iframe=document.createElement("a");
   iframe.setAttribute("href", linkText.value);
-  iframe.innerHTML = "link";
+  iframe.textContent = "link";
   links.appendChild(iframe);
 });
-
 let text=document.getElementById("text");
 let textButton=document.getElementById("text_button");
 let textText=document.getElementById("text_text");
 textButton.addEventListener("click", () =>{
   let iframe=document.createElement("h");
-  iframe.innerHTML = "text";
+  iframe.textContent= "text";
   text.appendChild(iframe);
 });
