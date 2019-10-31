@@ -11,17 +11,17 @@ let links=document.getElementById("links");
 let linkButton=document.getElementById("link_button");
 let linkText=document.getElementById("link_text");
 linkButton.addEventListener("click", () =>{
-  let iframe=document.createElement("link");
-  iframe.innerHTML = "link";
+  let iframe=document.createElement("a");
   iframe.setAttribute("href", linkText.value);
+  iframe.innerHTML = "link";
   links.appendChild(iframe);
 });
 
-let texts=document.getElementById("texts");
+let text=document.getElementById("text");
 let textButton=document.getElementById("text_button");
 let textText=document.getElementById("text_text");
 textButton.addEventListener("click", () =>{
-  let iframe=document.createElement("text");
-  iframe.innerHTML = textText.value;
-  texts.appendChild(iframe);
+  let iframe=document.createElement("h");
+  iframe.innerHTML = "text";
+  text.appendChild(iframe);
 });
