@@ -20,6 +20,7 @@ let textButton=document.getElementById("text_button");
 let textText=document.getElementById("text_text");
 textButton.addEventListener("click", () =>{
   let iframe=document.createElement("h");
-  iframe.textContent= "text";
+  iframe.setAttribute("text", textText.value);
+   iframe.textContent = "text";
   text.appendChild(iframe);
 });
