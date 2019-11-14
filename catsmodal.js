@@ -24,9 +24,9 @@ function updateImage(url){
   let image = document.createElement("img");
   image.setAttribute("src", url);
   let main = document.getElementById("main");
-  image.addEventListener("click",()=>{
-  image.Show.setAttribute('src', url);
+  image.addEventListener("click", ()=>{
+  imageShow.setAttribute('src', url);
   modal.style.display = "block"
-  });
+    });
   main.appendChild(image);
 }
